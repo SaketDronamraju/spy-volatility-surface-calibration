@@ -1,5 +1,5 @@
 
-# 🧠 SPY Stochastic Derivatives
+#  SPY Stochastic Derivatives
 ## SPY Volatility Surface, Monte Carlo Pricing & Nonlinear Calibration Framework
 
 ---
