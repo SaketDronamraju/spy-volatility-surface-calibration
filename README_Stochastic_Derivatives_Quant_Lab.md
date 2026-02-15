@@ -234,15 +234,6 @@ This project bridges:
 
 It is structured as a reusable derivatives research framework, not a single-use notebook.
 
----
-
-# 🔮 Future Extensions
-
-- Multi-strike calibration simultaneously
-- Stochastic volatility (Heston) extension
-- Local volatility surface fitting
-- Variance reduction techniques in Monte Carlo
-- Risk-neutral density extraction
 
 ---
 
