@@ -1,5 +1,5 @@
 
-# 🧠 Stochastic Derivatives Quant Lab  
+# 🧠 SPY Volatility Surface Calibration
 ## SPY Volatility Surface, Monte Carlo Pricing & Nonlinear Calibration Framework
 
 ---
