@@ -1,5 +1,5 @@
 
-# 🧠 SPY Volatility Surface Calibration
+# 🧠 SPY Stochastic Derivatives
 ## SPY Volatility Surface, Monte Carlo Pricing & Nonlinear Calibration Framework
 
 ---
