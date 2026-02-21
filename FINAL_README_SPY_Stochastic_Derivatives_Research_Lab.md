@@ -15,7 +15,7 @@ https://spy-volatility-surface-calibration-mpi3rwpv4watjzlwfaphlw.streamlit.app/
 
 # 📌 Project Overview
 
-The **SPY Stochastic Derivatives** is a quantitative
+The SPY Stochastic Derivatives is a quantitative
 finance research framework built around real SPY option market data.
 
 It integrates:
@@ -206,7 +206,7 @@ The app provides interactive parameter controls for:
 
 # 📌 Summary
 
-The **SPY Stochastic Derivatives ** reconstructs the SPY
+The SPY Stochastic Derivatives reconstructs the SPY
 volatility surface, simulates stochastic pricing via Monte Carlo,
 performs nonlinear calibration, and analyzes second-order curvature
 using Hessian diagnostics --- all inside an interactive research
