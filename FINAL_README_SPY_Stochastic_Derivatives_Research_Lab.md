@@ -2,6 +2,7 @@
 
 ## Advanced Option Pricing, Volatility Surface Reconstruction & Nonlinear Calibration Framework
 
+
 ------------------------------------------------------------------------
 
 ## 🌐 Live Demo
@@ -48,15 +49,15 @@ engineering.
 
 ------------------------------------------------------------------------
 
-# 📊 Data Sources
 
+## 📊 Data Sources
 The project uses live and real-world financial data:
 
-  Data Type          Source
-  ------------------ ------------------------------------
-  SPY Spot Price     Yahoo Finance API (via `yfinance`)
-  SPY Option Chain   Yahoo Finance Options Data
-  Risk-Free Rate     User-controlled input parameter
+| Data Type         | Source                                      |
+|-------------------|---------------------------------------------|
+| SPY Spot Price    | Yahoo Finance API (via `yfinance`)          |
+| SPY Option Chain  | Yahoo Finance Options Data                  |
+| Risk-Free Rate    | User-controlled input parameter             |
 
 Data is fetched dynamically using:
 
@@ -109,12 +110,11 @@ Reveals volatility skew and term structure.
 
 ## 4️⃣ Greeks Sensitivity Surfaces
 
-  Greek   Meaning
-  ------- ---------------------------
-  Delta   Sensitivity to spot
-  Gamma   Curvature w.r.t spot
-  Vega    Sensitivity to volatility
-
+| Greek | Meaning                     |
+|-------|----------------------------|
+| Delta | Sensitivity to spot price  |
+| Gamma | Curvature w.r.t. spot      |
+| Vega  | Sensitivity to volatility  |
 These surfaces visualize first- and second-order risk exposures.
 
 ------------------------------------------------------------------------
@@ -154,20 +154,19 @@ Curvature heatmaps visualize optimization stability.
 
 ------------------------------------------------------------------------
 
-# 📈 High vs Low --- Interpretation Guide
+## 📈 High vs Low — Interpretation Guide
 
-  Metric               High Means                    Low Means
-  -------------------- ----------------------------- ------------------
-  Option Price         Expensive premium             Cheap premium
-  Implied Volatility   High uncertainty              Calm market
-  Delta                Strong directionality         Neutral exposure
-  Gamma                Strong convexity              Linear payoff
-  Vega                 High volatility sensitivity   Vol-insensitive
-  Loss                 Poor fit                      Good fit
-  Curvature            Steep geometry                Flat region
+| Metric              | High Means                    | Low Means          |
+|---------------------|-------------------------------|--------------------|
+| Option Price        | Expensive premium             | Cheap premium      |
+| Implied Volatility  | High uncertainty              | Calm market        |
+| Delta               | Strong directionality         | Neutral exposure   |
+| Gamma               | Strong convexity              | Linear payoff      |
+| Vega                | High volatility sensitivity   | Vol-insensitive    |
+| Loss                | Poor fit                      | Good fit           |
+| Curvature           | Steep geometry                | Flat region        |
 
-There is no universal "good" or "bad" --- interpretation depends on
-strategy and risk exposure.
+There is no universal "good" or "bad" — interpretation depends on strategy and risk exposure.
 
 ------------------------------------------------------------------------
 
@@ -201,23 +200,6 @@ The app provides interactive parameter controls for:
 -   yfinance
 -   Plotly (3D Visualization)
 -   Streamlit (Deployment)
-
-------------------------------------------------------------------------
-
-# 🚀 How To Run Locally
-
-pip install streamlit plotly yfinance scipy pandas numpy\
-streamlit run app.py
-
-------------------------------------------------------------------------
-
-# 🔮 Future Extensions
-
--   Multi-strike calibration
--   Stochastic volatility models (Heston)
--   Local volatility surface fitting
--   Variance reduction techniques
--   Risk-neutral density extraction
 
 ------------------------------------------------------------------------
 
