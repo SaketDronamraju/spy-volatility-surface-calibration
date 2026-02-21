@@ -115,6 +115,7 @@ Reveals volatility skew and term structure.
 | Delta | Sensitivity to spot price  |
 | Gamma | Curvature w.r.t. spot      |
 | Vega  | Sensitivity to volatility  |
+
 These surfaces visualize first- and second-order risk exposures.
 
 ------------------------------------------------------------------------
