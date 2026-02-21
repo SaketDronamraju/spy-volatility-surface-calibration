@@ -1,4 +1,4 @@
-# SPY Stochastic Derivatives
+# SPY Stochastic Derivatives Research Lab
 
 ## Advanced Option Pricing, Volatility Surface Reconstruction & Nonlinear Calibration Framework
 
@@ -11,7 +11,7 @@ finance research framework built around real SPY option market data.
 
 It integrates:
 
--   Analytical option pricing (Black-Scholes)
+-   Analytical option pricing (Black--Scholes)
 -   Monte Carlo stochastic simulation
 -   Implied volatility surface reconstruction
 -   Nonlinear parameter calibration
@@ -19,7 +19,7 @@ It integrates:
 -   Greeks sensitivity surfaces
 -   Hessian curvature diagnostics
 
-This is a structured derivatives research engine - not just a pricing
+This is a structured derivatives research engine --- not just a pricing
 demo.
 
 ------------------------------------------------------------------------
@@ -39,30 +39,30 @@ implementation.
 
 ------------------------------------------------------------------------
 
-# 3. Black-Scholes Model
+# 3. Black--Scholes Model
 
 ## What It Represents
 
-The Black-Scholes model computes the theoretical fair value of a
+The Black--Scholes model computes the theoretical fair value of a
 European call option under risk-neutral assumptions.
 
 C = S N(d1) − K e\^(−rT) N(d2)
 
 Where:
 
--   S = Spot price
--   K = Strike price
--   T = Time to maturity
--   r = Risk-free rate
+-   S = Spot price\
+-   K = Strike\
+-   T = Time to maturity\
+-   r = Risk-free rate\
 -   σ = Volatility
 
 ## Interpretation
 
-Higher volatility → Higher option price
-Longer maturity → Higher time value
+Higher volatility → Higher option price\
+Longer maturity → Higher time value\
 Higher interest rate → Slightly higher call value
 
-High price is not inherently good or bad - it depends on whether you
+High price is not inherently good or bad --- it depends on whether you
 are long or short the option.
 
 ------------------------------------------------------------------------
@@ -79,14 +79,14 @@ Then estimates the discounted expected payoff.
 
 ## Interpretation
 
-If Monte Carlo price converges to Black-Scholes:
+If Monte Carlo price converges to Black--Scholes:
 
-• The stochastic engine is correct
+• The stochastic engine is correct\
 • Numerical stability is strong
 
 If variance is high:
 
-• Too few simulations
+• Too few simulations\
 • Noisy estimator
 
 Low variance and smooth convergence are desirable.
@@ -102,20 +102,20 @@ equal the market price.
 
 Surface axes:
 
-X → Strike price
-Y → Time to maturity
+X → Strike\
+Y → Time to maturity\
 Z → Implied volatility
 
 ## Interpretation
 
 High implied volatility indicates:
 
-• Market expects large future price swings
+• Market expects large future price swings\
 • Tail risk is priced expensively
 
 Volatility skew shows asymmetric risk perception.
 
-High IV is not "good" or "bad" - it reflects market expectations.
+High IV is not "good" or "bad" --- it reflects market expectations.
 
 ------------------------------------------------------------------------
 
@@ -149,13 +149,13 @@ L(σ, r) = (C_model − C_market)\^2
 
 ## Interpretation
 
-Low loss → good model fit
+Low loss → good model fit\
 High loss → poor calibration
 
 Surface shape matters:
 
-Convex bowl → stable optimization
-Flat region → weak parameter identification
+Convex bowl → stable optimization\
+Flat region → weak parameter identification\
 Saddle region → unstable direction
 
 Stable convex regions are desirable for reliable calibration.
@@ -170,8 +170,8 @@ Parameters updated via:
 
 ## Interpretation
 
-Smooth descent → convex landscape
-Oscillation → learning rate too high
+Smooth descent → convex landscape\
+Oscillation → learning rate too high\
 Stagnation → flat region or saddle point
 
 Optimization geometry reveals model robustness.
@@ -184,11 +184,11 @@ The Hessian contains second derivatives of the loss function.
 
 Eigenvalues interpretation:
 
-Both positive → local minimum
-Mixed signs → saddle point
+Both positive → local minimum\
+Mixed signs → saddle point\
 Both negative → local maximum
 
-High curvature → steep, highly sensitive surface
+High curvature → steep, highly sensitive surface\
 Low curvature → flat, weak parameter influence
 
 Moderate convex curvature is ideal for stable calibration.
@@ -197,40 +197,40 @@ Moderate convex curvature is ideal for stable calibration.
 
 # 10. Graph Interpretation Summary
 
-Volatility Surface → Market uncertainty structure
-Monte Carlo Convergence → Simulation stability
-Greeks Surfaces → Risk sensitivities
-Loss Surface → Calibration geometry
+Volatility Surface → Market uncertainty structure\
+Monte Carlo Convergence → Simulation stability\
+Greeks Surfaces → Risk sensitivities\
+Loss Surface → Calibration geometry\
 Curvature Heatmap → Second-order stability diagnostics
 
 Each visualization provides structural insight into model behavior.
 
 ------------------------------------------------------------------------
 
-## 11. High vs Low — Interpretation Guide
+# 11. High vs Low --- Interpretation Guide
 
-| Metric             | High Means                    | Low Means              |
-|--------------------|-------------------------------|------------------------|
-| Option Price       | Expensive premium             | Cheap premium          |
-| Implied Volatility | High uncertainty              | Calm market            |
-| Delta              | Strong directionality         | Neutral exposure       |
-| Gamma              | Strong convexity              | Linear payoff          |
-| Vega               | High volatility sensitivity   | Vol-insensitive        |
-| Loss               | Poor fit                      | Good fit               |
-| Curvature          | Steep geometry                | Flat region            |
+  Metric               High Means                    Low Means
+  -------------------- ----------------------------- ------------------
+  Option Price         Expensive premium             Cheap premium
+  Implied Volatility   High uncertainty              Calm market
+  Delta                Strong directionality         Neutral exposure
+  Gamma                Strong convexity              Linear payoff
+  Vega                 High volatility sensitivity   Vol-insensitive
+  Loss                 Poor fit                      Good fit
+  Curvature            Steep geometry                Flat region
 
-There is no universal "good" or "bad" — interpretation depends on trading strategy and risk exposure.
-
+There is no universal "good" or "bad" --- interpretation depends on
+trading strategy and risk exposure.
 
 ------------------------------------------------------------------------
 
 # 12. Conceptual Flow
 
-Market Data
-→ Extract Implied Volatility
-→ Fit Pricing Model
-→ Analyze Loss Landscape
-→ Apply Gradient Optimization
+Market Data\
+→ Extract Implied Volatility\
+→ Fit Pricing Model\
+→ Analyze Loss Landscape\
+→ Apply Gradient Optimization\
 → Diagnose Curvature & Sensitivity
 
 This workflow reflects a realistic derivatives research process.
@@ -241,10 +241,10 @@ This workflow reflects a realistic derivatives research process.
 
 The **SPY Stochastic Derivatives Research Lab** demonstrates:
 
-• Stochastic modeling
-• Surface reconstruction
-• Nonlinear optimization
-• First- and second-order sensitivity analysis
+• Stochastic modeling\
+• Surface reconstruction\
+• Nonlinear optimization\
+• First- and second-order sensitivity analysis\
 • Interactive quantitative engineering
 
 It integrates quantitative finance theory with deployable research
